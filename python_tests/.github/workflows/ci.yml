@@ -1,5 +1,5 @@
 name: Project Test
-on: [push]
+on: push
 
 jobs:
   build:
