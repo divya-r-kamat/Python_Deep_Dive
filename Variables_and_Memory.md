@@ -6,3 +6,18 @@ When we write a line a of code, say x=10 and execute this line of code the first
 
 - Variables in python are always references to objects in memory. 
 - We can find the memory address referenced by a variable using the id() function. This function returns a base-10 number, this could be converted to hexadecimal using hex() function if required.
+
+
+Python memory manager maintains Reference counting for every object in the memory.
+
+We can keep track of objects that are created in the memory, by keeping track of their memory address and how many variables are pointing to the same object. If we say y = x , we are not taking the value of 10 and assigning to y rather the memory reference of x is assigned to y, so y would also point to the same memory address x1010 i.e we are actually sharing the reference and the reference count for x1010 would be 2. Where the variables are deteled python memory manager deletes the objects and the space can be reused.
+
+Reference count of a variable in python can be found using following ways
+
+    sys.getrefcount(variable)
+    
+The problem with this is passing a variable to getrefcount() creates an extra reference to the same object.
+
+    ctypes.c_long.from_address(address).value
+
+In this case, we just pass the memory address (an integer), not a reference so it doesnot affect reference count
