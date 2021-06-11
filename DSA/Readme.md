@@ -1,4 +1,4 @@
-## Python Datastructure and Alorithms
+## Python Datastructure and Algorithms
 
 Big(O) notation is a language we use to talk about how long a algorithm takes to run, we can compare two different algorithm or functions using Big(O) to find which one is better that the other with regards to scale regardless of our machine/conputer differences.
 
