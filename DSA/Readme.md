@@ -10,3 +10,11 @@ We measure Big(O) using below graph, it means when we go bigger and bigger with 
 - O(n) - This is one of the most common Big-O notation, it indicates that as the number of inputs (n) increase, the number of operations also increases, also called as Linear Time.
 
 - O(1) - This is called Constant time, no matter how many inputs we have the number of operation is just one or constant amount of time.
+
+- O(n2) - Quadratic time, as the number of elements increases the number of operations increases significantly
+
+Basic Rules for Big-O :
+- Rule1 : We always care about the Worst Case Scenario
+- Rule2: Drop the Constants
+- Rule3 : Different terms for inputs, O(m+n) - one for each input
+- Rule4: Drop non dominants
