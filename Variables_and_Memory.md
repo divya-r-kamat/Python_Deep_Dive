@@ -21,3 +21,21 @@ The problem with this is passing a variable to getrefcount() creates an extra re
     ctypes.c_long.from_address(address).value
 
 In this case, we just pass the memory address (an integer), not a reference so it doesnot affect reference count
+
+
+### Garbage Collector
+
+Garbage collector helps identify the circular references and clean them up. 
+
+What is circular reference? Lets say we have a variable x which points to object A and lets suppose the object A has a var y and it references to another object B and this object B also has a instance variable z which points back to object A. Now this is called a circular reference, deleting the variable x will not clean up the objects with circular references by the reference count, this causes memory leak. This is where Garbarge collector comes in.
+- GC can be controlled programmatically using the gc module, by default it is turned on
+- runs periodically on its own
+- can be called manually, and even do own cleanup
+
+
+### Dynamic Vs Static type
+
+Languages like C++, Java are statically type languages, i.e the datatype is associated with the variable name, whereas Python is dynamically typed, type is not attached to the variable. Built in type() function can be used to determine the type of object currently referenced by the variable
+
+
+
