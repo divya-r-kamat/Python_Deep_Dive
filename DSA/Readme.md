@@ -1,6 +1,6 @@
 ## Python Datastructure and Algorithms
 
-Big(O) notation is a language we use to talk about how long a algorithm takes to run, we can compare two different algorithm or functions using Big(O) to find which one is better that the other with regards to scale regardless of our machine/conputer differences.
+Big(O) notation is a language we use to talk about how long a algorithm takes to run, we can compare two different algorithm or functions using Big(O) to find which one is better than the other with regards to scale, regardless of our machine/computer differences.
 
 We measure Big(O) using below graph, it means when we go bigger and bigger with our input how much does the algorithm or function slow down or the number of operations that we need to do as the inpur increases. This is called algorithmic efficiency, different functions have differnt big-O complexities. The less or lower it slows down the better it is.
 
@@ -15,6 +15,6 @@ We measure Big(O) using below graph, it means when we go bigger and bigger with 
 
 Basic Rules for Big-O :
 - Rule1 : We always care about the Worst Case Scenario
-- Rule2: Drop the Constants
+- Rule2 : Drop the Constants
 - Rule3 : Different terms for inputs, O(m+n) - one for each input
-- Rule4: Drop non dominants
+- Rule4 : Drop non dominants
