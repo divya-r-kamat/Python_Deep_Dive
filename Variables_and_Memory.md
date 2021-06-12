@@ -42,8 +42,12 @@ Languages like C++, Java are statically type languages, i.e the datatype is asso
 
 Lets say we have a variable var and this references some object in the memory at some memory address say x1000 and lets say the data type of this object is bank_account and this has two instance properties account number and balance. Now suppose, we modified the balance, the internal state changes but the memory address doesnot change. Changing the data inside the object is called modifying the internal state of the object.
 
-An object is said to be mutated, when the internal state (data) of an object is changed and the memory address has not changed, i.e an object whose internal state can be changed is called mutable. But the object whose internal state cannot be changed is called immutable.
+In python, once a string is been created, the contents of the object can never be changed, the only way to modify the "value" is to reassign to another object.
 
+An object is said to be mutated, when the internal state (data) of an object is changed and the memory address has not changed, i.e an object whose internal state can be changed is called mutable. But the object whose internal state cannot be changed is called immutable. 
+
+- Immutable objects are safe from unintended modification.
+- Immutable collection objects can contain mutable objects. 
 
 Immutable Objects
 - Numbers (int, float, booleans etc)
@@ -57,7 +61,6 @@ Mutable Objects
 - sets
 - dictionaries
 - user defined class
-
 
 
 
