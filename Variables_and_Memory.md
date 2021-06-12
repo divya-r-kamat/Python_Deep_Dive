@@ -38,4 +38,27 @@ What is circular reference? Lets say we have a variable x which points to object
 Languages like C++, Java are statically type languages, i.e the datatype is associated with the variable name, whereas Python is dynamically typed, type is not attached to the variable. Built in type() function can be used to determine the type of object currently referenced by the variable
 
 
+### Object Mutability
+
+Lets say we have a variable var and this references some object in the memory at some memory address say x1000 and lets say the data type of this object is bank_account and this has two instance properties account number and balance. Now suppose, we modified the balance, the internal state changes but the memory address doesnot change. Changing the data inside the object is called modifying the internal state of the object.
+
+An object is said to be mutated, when the internal state (data) of an object is changed and the memory address has not changed, i.e an object whose internal state can be changed is called mutable. But the object whose internal state cannot be changed is called immutable.
+
+
+Immutable Objects
+- Numbers (int, float, booleans etc)
+- Strings
+- Tuples (tuple is immutable but it can contain mutable elements like lists)
+- frozen sets
+- user defined class
+
+Mutable Objects
+- lists
+- sets
+- dictionaries
+- user defined class
+
+
+
+
 
