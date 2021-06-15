@@ -63,5 +63,38 @@ Mutable Objects
 - user defined class
 
 
+### Shared Reference
 
+Shared reference is the concept of two variables referencing(pointing) the same object in memory(i.e having the same memory address)
 
+    a = 10 
+    b = a (set the memory reference of b equal to that of a)
+    
+Sometimes, python's memory manager decides to automatically re-use the memory reference
+
+With mutable objects, the python memory manager will never create shared references
+
+    a = [1,2,3]  (a will have seperate memory address)
+    b = [1,2,3]  (b will have seperate memory address)
+
+### Variable equality
+- comparing memory address
+   - to compare memory address 'is' (identity) operator
+   - "is not" is used for negation
+
+- compare internal state of the object (data)
+   - to compare internal state of the object "==" (equality operator)
+   - "!=" is used for negation
+
+- "None" objects is assigned to variables to indicate that they are not set, empty value (or null pointer)
+   - Its a real object that us managed by the the python memory manager
+   - the memory manager will always use a shared reference when assigning a variable to None
+
+            a = None
+            b = None
+            c = None
+
+            (all have same memory address)
+
+   - So we can test if a variable is "not set" or "empty" by comparing its memory address to the memory address of None using the is opeartor.
+a is None
