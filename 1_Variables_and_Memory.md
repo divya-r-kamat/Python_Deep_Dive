@@ -98,3 +98,13 @@ With mutable objects, the python memory manager will never create shared referen
 
    - So we can test if a variable is "not set" or "empty" by comparing its memory address to the memory address of None using the is opeartor.
 a is None
+
+Everything is an object in python, i.e they are instances of classses
+
+- Functions are instances of function class
+- Classes are instances of class (class itself is an instance of class type)
+
+This means all of this types have a memory address, so 
+- any object can be assigned to a variable
+- any object can be passed to a function as an argument, i.e function can be passed to functions
+- any object can be returned from a function 
