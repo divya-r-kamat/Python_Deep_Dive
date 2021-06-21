@@ -1,0 +1,10 @@
+## Data Types in Python
+
+The int data type
+ex : 0, 10, -100, 100000
+
+How large (magnitude) can a Python int become (positive or negative)?
+
+Integers are represented internally using base2 (binary) digits, not decimal
+
+
