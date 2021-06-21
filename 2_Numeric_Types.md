@@ -21,9 +21,10 @@ In a 32-bit OS:
 memory spaces (bytes) are limited by their address number -> 32 bits
 when we create a variable its stored in some memory address, and those memory address are represented by integers
 in 32 bit architecture the addresses are limited to 32 bits. 
-Every address is a byte, so the maximum of address in bytes is 4294967296 bytes of addressable memory
-= 4294967296 /1024 kb = 4194304kb
-= 4194304 / 1024 MB = 4096 MB
-= 4096 / 1024 GB = 4GB
+
+        Every address is a byte, so the maximum of address in bytes is 4294967296 bytes of addressable memory
+        = 4294967296 /1024 kb = 4194304kb
+        = 4194304 / 1024 MB = 4096 MB
+        = 4096 / 1024 GB = 4GB
 
 
